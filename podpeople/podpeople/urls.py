@@ -24,6 +24,7 @@ router.register(r'api/food', views.FoodViewSet)
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', views.home, name='home')
 ]
 
 urlpatterns += router.urls
